@@ -1,8 +1,228 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <title>Слайдер картинок</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="slider">
+        <input id="pic1" type="radio" name="images">
+        <input id="pic2" type="radio" name="images">
+        <input id="pic3" type="radio" name="images">
+        <input id="main_pic" type="radio" name="images" checked>
+        <input id="pic5" type="radio" name="images">
+        <input id="pic6" type="radio" name="images">
+        <input id="pic7" type="radio" name="images">
+
+        <div class="gallery">
+            <input type="radio" id="recipe_one_opener" name="recipe-animation">
+            <input type="radio" id="recipe_two_opener" name="recipe-animation">
+            <input type="radio" id="recipe_three_opener" name="recipe-animation">
+            <input type="radio" id="recipe_main_pic_opener" name="recipe-animation">
+            <input type="radio" id="recipe_fifth_opener" name="recipe-animation">
+            <input type="radio" id="recipe_sixth_opener" name="recipe-animation">
+            <input type="radio" id="recipe_seventh_opener" name="recipe-animation">
+
+            <input type="radio" id="recipe_one_closer" name="recipe-animation">
+            <input type="radio" id="recipe_two_closer" name="recipe-animation">
+            <input type="radio" id="recipe_three_closer" name="recipe-animation">
+            <input type="radio" id="recipe_main_pic_closer" name="recipe-animation">
+            <input type="radio" id="recipe_fifth_closer" name="recipe-animation">
+            <input type="radio" id="recipe_sixth_closer" name="recipe-animation">
+            <input type="radio" id="recipe_seventh_closer" name="recipe-animation">
+
+            <section class="vegetable_card first-picture">
+                <label for="pic1"><img src="src/1.jpg" alt="1"></label>
+                <label for="recipe_one_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_one_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card second-picture">
+                <label for="pic2"><img src="src/2.jpg" alt="2"></label>
+                <label for="recipe_two_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_two_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card third-picture">
+                <label for="pic3"><img src="src/3.jpg" alt="3"></label>
+                <label for="recipe_three_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_three_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card center-picture">
+                <label for="main_pic"><img src="src/4.jpg" alt="4"></label>
+                <label for="recipe_main_pic_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_main_pic_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card fifth-picture">
+                <label for="pic5"><img src="src/5.jpg" alt="5"></label>
+                <label for="recipe_fifth_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_fifth_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card sixth-picture">
+                <label for="pic6"><img src="src/6.jpg" alt="6"></label>
+                <label for="recipe_sixth_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_sixth_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <section class="vegetable_card seventh-picture">
+                <label for="pic7"><img src="src/7.jpg" alt="7"></label>
+                <label for="recipe_seventh_opener"><div class="recipe_link"><span>рецепт</span></div></label>
+                <div class="recipe">
+                    <label for="recipe_seventh_closer"><span class="recipe_cross">X</span></label>
+                    <h2 class="recipe_header">Картофельное пюре</h2>
+                    <div class="recipe_list">
+                        <ul>
+                            <li><b>Картофель</b> (1кг)</li>
+                            <li><b>Крупная соль</b> (1 столовая ложка)</li>
+                            <li><b>Сливочное масло</b> (250 г)</li>
+                            <li><b>Жирное молоко</b> (150 мл)</li>
+                            <li><b>Молотый черный перец</b> (по вкусу)</li>
+                            <li><b>Соль</b> (по вкусу)</li>
+                        </ul>
+                    </div>
+                    <div class="recipe_manual">
+                        <div class="manual">
+                            <span class="manual_header">Инструкция:</span>
+                            <p>1. Картофель — лучше крахмалистого сорта, Робюшон использует французский сорт ratte — помыть и очистить от остатков земли, не срезая кожицы. Положить его в кастрюлю, залить двумя литрами холодной воды, добавить столовую ложку крупной соли и довести все это до легкого кипения. Так варить 25 минут, чтобы в конце нож легко входил и выходил чистым из картошки.</p>
+                            <p>2. Вытащить картошку, очистить и пропустить через мельницу для овощей или картофельный пресс (более трудоемко, но для легкости текстуры даже лучше протереть через мелкое сито).</p>
+                            <p>3. Переложить результат в сковороду, разогреть и с силой перемешивать на огне пять минут, чтобы она подсушилась.</p>
+                        </div>
+                        <div class="manual_postscript">Визитная карточка Робюшона — его картофельное пюре с легендарной текстурой и легендарным количеством сливочного масла.</div>
+                    </div>
+                </div>
+            </section>
+            <div class="overlay"></div>
+        </div>
+    </div>
 </body>
 </html>
