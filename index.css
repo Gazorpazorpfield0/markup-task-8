@@ -145,10 +145,12 @@ img {
 .first-picture,
 .second-picture,
 .third-picture,
-.center-picture,
+.fourth-picture,
 .fifth-picture,
 .sixth-picture,
-.seventh-picture {
+.seventh-picture,
+.eighth-picture,
+.nineth-picture {
     transition: 1s ease;
 }
 
@@ -157,10 +159,12 @@ img {
 #pic1:checked~.gallery .first-picture img:hover,
 #pic2:checked~.gallery .second-picture img:hover,
 #pic3:checked~.gallery .third-picture img:hover,
-#main_pic:checked~.gallery .center-picture img:hover,
+#pic4:checked~.gallery .fourth-picture img:hover,
 #pic5:checked~.gallery .fifth-picture img:hover,
 #pic6:checked~.gallery .sixth-picture img:hover,
-#pic7:checked~.gallery .seventh-picture img:hover {
+#pic7:checked~.gallery .seventh-picture img:hover,
+#pic8:checked~.gallery .eighth-picture img:hover,
+#pic9:checked~.gallery .nineth-picture img:hover {
     z-index: 1;
 }
 
@@ -169,40 +173,48 @@ img {
 #recipe_one_opener:checked~.first-picture,
 #recipe_two_opener:checked~.second-picture,
 #recipe_three_opener:checked~.third-picture,
-#recipe_main_pic_opener:checked~.center-picture,
+#recipe_fourth_opener:checked~.fourth-picture,
 #recipe_fifth_opener:checked~.fifth-picture,
 #recipe_sixth_opener:checked~.sixth-picture,
-#recipe_seventh_opener:checked~.seventh-picture {
+#recipe_seventh_opener:checked~.seventh-picture,
+#recipe_eighth_opener:checked~.eighth-picture,
+#recipe_nineth_opener:checked~.nineth-picture {
     animation: card-flip 2s forwards;
 }
 
 #recipe_one_opener:checked~.first-picture label img,
 #recipe_two_opener:checked~.second-picture label img,
 #recipe_three_opener:checked~.third-picture label img,
-#recipe_main_pic_opener:checked~.center-picture label img,
+#recipe_fourth_opener:checked~.fourth-picture label img,
 #recipe_fifth_opener:checked~.fifth-picture label img,
 #recipe_sixth_opener:checked~.sixth-picture label img,
-#recipe_seventh_opener:checked~.seventh-picture label img {
+#recipe_seventh_opener:checked~.seventh-picture label img,
+#recipe_eighth_opener:checked~.eighth-picture label img,
+#recipe_nineth_opener:checked~.nineth-picture label img {
     animation: card-img-hiding 2s forwards;
 }
 
 #recipe_one_opener:checked~.first-picture .recipe_link,
 #recipe_two_opener:checked~.second-picture .recipe_link,
 #recipe_three_opener:checked~.third-picture .recipe_link,
-#recipe_main_pic_opener:checked~.center-picture .recipe_link,
+#recipe_fourth_opener:checked~.fourth-picture .recipe_link,
 #recipe_fifth_opener:checked~.fifth-picture .recipe_link,
 #recipe_sixth_opener:checked~.sixth-picture .recipe_link,
-#recipe_seventh_opener:checked~.seventh-picture .recipe_link {
+#recipe_seventh_opener:checked~.seventh-picture .recipe_link,
+#recipe_eighth_opener:checked~.eighth-picture .recipe_link,
+#recipe_nineth_opener:checked~.nineth-picture .recipe_link {
     visibility: hidden;
 }
 
 #recipe_one_closer:checked~.first-picture,
 #recipe_two_closer:checked~.second-picture,
 #recipe_three_closer:checked~.third-picture,
-#recipe_main_pic_closer:checked~.center-picture,
+#recipe_fourth_closer:checked~.fourth-picture,
 #recipe_fifth_closer:checked~.fifth-picture,
 #recipe_sixth_closer:checked~.sixth-picture,
-#recipe_seventh_closer:checked~.seventh-picture {
+#recipe_seventh_closer:checked~.seventh-picture,
+#recipe_eighth_closer:checked~.eighth-picture,
+#recipe_nineth_closer:checked~.nineth-picture {
     animation: card-flip-reverse 2s;
 }
 
@@ -212,12 +224,16 @@ img {
 #recipe_fifth_closer:checked~.fifth-picture label img,
 #recipe_sixth_closer:checked~.sixth-picture label img,
 #recipe_seventh_closer:checked~.seventh-picture label img,
+#recipe_eighth_closer:checked~.eighth-picture label img,
+#recipe_nineth_closer:checked~.nineth-picture label img,
 #recipe_one_closer:checked~.first-picture .recipe_link,
 #recipe_two_closer:checked~.second-picture .recipe_link,
-#recipe_main_pic_closer:checked~.center-picture .recipe_link,
+#recipe_fourth_closer:checked~.fourth-picture .recipe_link,
 #recipe_fifth_closer:checked~.fifth-picture .recipe_link,
 #recipe_sixth_closer:checked~.sixth-picture .recipe_link,
-#recipe_seventh_closer:checked~.seventh-picture .recipe_link {
+#recipe_seventh_closer:checked~.seventh-picture .recipe_link,
+#recipe_eighth_closer:checked~.eighth-picture .recipe_link,
+#recipe_nineth_closer:checked~.nineth-picture .recipe_link {
     animation: card-img-appearing 2s;
 }
 
@@ -226,84 +242,126 @@ img {
 #pic1:checked~.gallery .first-picture,
 #pic2:checked~.gallery .second-picture,
 #pic3:checked~.gallery .third-picture,
-#main_pic:checked~.gallery .center-picture,
+#pic4:checked~.gallery .fourth-picture,
 #pic5:checked~.gallery .fifth-picture,
 #pic6:checked~.gallery .sixth-picture,
-#pic7:checked~.gallery .seventh-picture {
-    transform: scale(1.2);
+#pic7:checked~.gallery .seventh-picture,
+#pic8:checked~.gallery .eighth-picture,
+#pic9:checked~.gallery .nineth-picture {
+    transform: scale(1.5);
     left: 500px;
     z-index: 3;
 }
 
 #pic1:checked~.gallery .second-picture,
 #pic2:checked~.gallery .third-picture,
-#pic3:checked~.gallery .center-picture,
-#main_pic:checked~.gallery .fifth-picture,
+#pic3:checked~.gallery .fourth-picture,
+#pic4:checked~.gallery .fifth-picture,
 #pic5:checked~.gallery .sixth-picture,
 #pic6:checked~.gallery .seventh-picture,
-#pic7:checked~.gallery .first-picture {
-    transform: perspective(400px) rotateY(-20deg);
-    left: 690px;
+#pic7:checked~.gallery .eighth-picture,
+#pic8:checked~.gallery .nineth-picture,
+#pic9:checked~.gallery .first-picture {
+    transform: perspective(400px) rotateY(40deg);
+    left: 800px;
     z-index: 2;
 }
 
 #pic1:checked~.gallery .third-picture,
-#pic2:checked~.gallery .center-picture,
+#pic2:checked~.gallery .fourth-picture,
 #pic3:checked~.gallery .fifth-picture,
-#main_pic:checked~.gallery .sixth-picture,
+#pic4:checked~.gallery .sixth-picture,
 #pic5:checked~.gallery .seventh-picture,
-#pic6:checked~.gallery .first-picture,
-#pic7:checked~.gallery .second-picture {
-    transform: perspective(400px) rotateY(-15deg);
-    left: 790px;
+#pic6:checked~.gallery .eighth-picture,
+#pic7:checked~.gallery .nineth-picture,
+#pic8:checked~.gallery .first-picture,
+#pic9:checked~.gallery .second-picture {
+    transform: perspective(400px) rotateY(100deg) scale(0.7);
+    left: 850px;
     z-index: 1;
 }
 
-#pic1:checked~.gallery .center-picture,
+#pic1:checked~.gallery .fourth-picture,
 #pic2:checked~.gallery .fifth-picture,
 #pic3:checked~.gallery .sixth-picture,
-#main_pic:checked~.gallery .seventh-picture,
-#pic5:checked~.gallery .first-picture,
-#pic6:checked~.gallery .second-picture,
-#pic7:checked~.gallery .third-picture {
-    transform: perspective(400px) rotateY(-10deg);
-    left: 890px;
+#pic4:checked~.gallery .seventh-picture,
+#pic5:checked~.gallery .eighth-picture,
+#pic6:checked~.gallery .nineth-picture,
+#pic7:checked~.gallery .first-picture,
+#pic8:checked~.gallery .second-picture,
+#pic9:checked~.gallery .third-picture {
+    transform: perspective(400px) rotateY(160deg) scale(0.6);
+    left: 750px;
     z-index: 0;
 }
 
 #pic1:checked~.gallery .fifth-picture,
 #pic2:checked~.gallery .sixth-picture,
 #pic3:checked~.gallery .seventh-picture,
-#main_pic:checked~.gallery .first-picture,
-#pic5:checked~.gallery .second-picture,
-#pic6:checked~.gallery .third-picture,
-#pic7:checked~.gallery .center-picture {
-    transform: perspective(400px) rotateY(20deg);
-    left: 100px;
+#pic4:checked~.gallery .eighth-picture,
+#pic5:checked~.gallery .nineth-picture,
+#pic6:checked~.gallery .first-picture,
+#pic7:checked~.gallery .second-picture,
+#pic8:checked~.gallery .third-picture,
+#pic9:checked~.gallery .fourth-picture {
+    transform: perspective(600px) rotateY(170deg) scale(0.6);
+    left: 600px;
     z-index: 0;
 }
 
 #pic1:checked~.gallery .sixth-picture,
 #pic2:checked~.gallery .seventh-picture,
-#pic3:checked~.gallery .first-picture,
-#main_pic:checked~.gallery .second-picture,
-#pic5:checked~.gallery .third-picture,
-#pic6:checked~.gallery .center-picture,
-#pic7:checked~.gallery .fifth-picture {
-    transform: perspective(400px) rotateY(15deg);
-    left: 200px;
-    z-index: 1;
+#pic3:checked~.gallery .eighth-picture,
+#pic4:checked~.gallery .nineth-picture,
+#pic5:checked~.gallery .first-picture,
+#pic6:checked~.gallery .second-picture,
+#pic7:checked~.gallery .third-picture,
+#pic8:checked~.gallery .fourth-picture,
+#pic9:checked~.gallery .fifth-picture {
+    transform: perspective(400px) rotateY(185deg) scale(0.6);
+    left: 400px;
+    z-index: 0;
 }
 
 #pic1:checked~.gallery .seventh-picture,
+#pic2:checked~.gallery .eighth-picture,
+#pic3:checked~.gallery .nineth-picture,
+#pic4:checked~.gallery .first-picture,
+#pic5:checked~.gallery .second-picture,
+#pic6:checked~.gallery .third-picture,
+#pic7:checked~.gallery .fourth-picture,
+#pic8:checked~.gallery .fifth-picture,
+#pic9:checked~.gallery .sixth-picture {
+    transform: perspective(400px) rotateY(-160deg) scale(0.6);
+    left: 250px;
+    z-index: 0;
+}
+
+#pic1:checked~.gallery .eighth-picture,
+#pic2:checked~.gallery .nineth-picture,
+#pic3:checked~.gallery .first-picture,
+#pic4:checked~.gallery .second-picture,
+#pic5:checked~.gallery .third-picture,
+#pic6:checked~.gallery .fourth-picture,
+#pic7:checked~.gallery .fifth-picture,
+#pic8:checked~.gallery .sixth-picture,
+#pic9:checked~.gallery .seventh-picture {
+    transform: perspective(400px) rotateY(-100deg) scale(0.7);
+    left: 150px;
+    z-index: 1;
+}
+
+#pic1:checked~.gallery .nineth-picture,
 #pic2:checked~.gallery .first-picture,
 #pic3:checked~.gallery .second-picture,
-#main_pic:checked~.gallery .third-picture,
-#pic5:checked~.gallery .center-picture,
+#pic4:checked~.gallery .third-picture,
+#pic5:checked~.gallery .fourth-picture,
 #pic6:checked~.gallery .fifth-picture,
-#pic7:checked~.gallery .sixth-picture {
-    transform: perspective(400px) rotateY(10deg);
-    left: 300px;
+#pic7:checked~.gallery .sixth-picture,
+#pic8:checked~.gallery .seventh-picture,
+#pic9:checked~.gallery .eighth-picture {
+    transform: perspective(400px) rotateY(-40deg);
+    left: 200px;
     z-index: 2;
 }
 
